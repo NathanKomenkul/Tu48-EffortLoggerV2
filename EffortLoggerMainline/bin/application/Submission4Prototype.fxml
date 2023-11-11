@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Authorship: Maria Marschalik Lucan -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EffortLoggerConsoleController">
+   <children>
+      <Button fx:id="start" layoutX="48.0" layoutY="101.0" mnemonicParsing="false" onAction="#startActivity" text="Start an Activity " />
+      <Spinner fx:id="project" layoutX="48.0" layoutY="168.0" prefHeight="25.0" prefWidth="265.0" />
+      <Spinner fx:id="effortCategory" layoutX="48.0" layoutY="213.0" />
+      <Spinner fx:id="subordinate" layoutX="216.0" layoutY="213.0" prefHeight="25.0" prefWidth="361.0" />
+      <Spinner fx:id="lifeCycle" layoutX="332.0" layoutY="168.0" prefHeight="25.0" prefWidth="245.0" />
+      <Button fx:id="stop" layoutX="47.0" layoutY="374.0" mnemonicParsing="false" onAction="#startActivity" text="Stop this Activity" />
+      <Button layoutX="47.0" layoutY="278.0" mnemonicParsing="false" onAction="#newTask" text="New Task" />
+      <Button layoutX="47.0" layoutY="325.0" mnemonicParsing="false" onAction="#currentTasks" text="Current Tasks" />
+      <Button layoutX="14.0" layoutY="429.0" mnemonicParsing="false" onAction="#effortLogEditor" text="Effort Log Editor" />
+      <Button layoutX="123.0" layoutY="429.0" mnemonicParsing="false" onAction="#defectLogConsole" text="Defect Log Console" />
+      <Button layoutX="249.0" layoutY="429.0" mnemonicParsing="false" onAction="#definitions" text="Definitions" />
+      <Button layoutX="329.0" layoutY="429.0" mnemonicParsing="false" onAction="#effortDefectLogs" text="Effort and Defect Logs" />
+      <Button layoutX="469.0" layoutY="429.0" mnemonicParsing="false" onAction="#planningPoker" text="Planning Poker Tool" />
+      <Text layoutX="14.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. When you start a new activity, press the &quot;Start an Activity&quot; button." />
+      <Text layoutX="15.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Select the project, life cycle step, effort category, and deliverable from the following lists:" />
+      <Text layoutX="49.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project:" />
+      <Text layoutX="335.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Life Cycle Step:" />
+      <Text layoutX="50.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effort Category:" />
+      <Text layoutX="15.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. When you need to create a new task, press the &quot;New Task&quot; button." />
+      <Text layoutX="14.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Press the &quot;Stop this Activity&quot; to generate an effort log entry using the attributes above." />
+      <Text layoutX="15.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Unless you are done for the day, it is best to perform steps 1 and 2 above before resuming work." />
+      <Text layoutX="14.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. When you need to check pending tasks, press the &quot;Current Tasks&quot; button." />
+      <StackPane layoutX="173.0" layoutY="40.0" prefHeight="32.0" prefWidth="200.0" />
+      <Rectangle fx:id="rectangleClock" arcHeight="5.0" arcWidth="5.0" fill="#ff211f" height="25.0" layoutX="13.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="572.0" />
+      <Text fx:id="clock" fill="WHITE" layoutX="232.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clock is stopped">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="501.0" layoutX="99.0" layoutY="32.0" startX="-100.0" />
+      <Text layoutX="189.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effort Logger Console">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

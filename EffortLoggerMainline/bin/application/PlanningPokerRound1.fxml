@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Authorship: Patrick Hall -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlanningPokerController">
+   <children>
+      <Label layoutX="236.0" layoutY="41.0" text="Planning Poker Round 1" textFill="#3712cc" />
+      <TextArea editable="false" layoutX="50.0" layoutY="100.0" prefHeight="117.0" prefWidth="235.0" text="Non-editable text with given user story&#10;in first planning poker screen." />
+      <Label layoutX="50.0" layoutY="83.0" text="User Story" />
+      <TableView editable="true" layoutX="336.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="337.0" layoutY="83.0" text="Historical Data List" />
+      <CheckBox layoutX="536.0" layoutY="131.0" mnemonicParsing="false" />
+      <CheckBox layoutX="536.0" layoutY="160.0" mnemonicParsing="false" />
+      <Button layoutX="338.0" layoutY="321.0" mnemonicParsing="false" text="Generate Estimate" />
+      <Label layoutX="50.0" layoutY="229.0" text="Estimate Display" />
+      <TextArea layoutX="49.0" layoutY="246.0" prefHeight="103.0" prefWidth="235.0" text="Shows estimated story points&#10;once calculated." />
+      <Button layoutX="52.0" layoutY="361.0" mnemonicParsing="false" text="Start Discussion/Next" />
+   </children>
+</AnchorPane>
