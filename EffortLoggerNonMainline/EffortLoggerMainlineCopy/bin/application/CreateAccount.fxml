@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Authorship: Nathan Komenkul -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.SceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="66.0" layoutX="147.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" width="306.0" />
+      <Label layoutX="180.0" layoutY="48.0" prefHeight="36.0" prefWidth="291.0" text="Create an Account">
+         <font>
+            <Font name="Calibri Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="134.0" prefHeight="25.0" prefWidth="44.0" text="Email">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountUsername" layoutX="231.0" layoutY="176.0" promptText="Username">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="accountRole" layoutX="231.0" layoutY="273.0" promptText="Role">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font></TextField>
+      <Label layoutX="129.0" layoutY="227.0" text="Password">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="279.0" text="Role">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="182.0" layoutY="328.0" mnemonicParsing="false" onAction="#createAccount" text="Create Account">
+         <font>
+            <Font name="Calibri" size="31.0" />
+         </font>
+      </Button>
+      <Button layoutX="23.0" layoutY="413.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="28.0" prefWidth="178.0" text="Back to Login Screen">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="124.0" layoutY="180.0" prefHeight="25.0" prefWidth="81.0" text="Username">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountEmail" layoutX="231.0" layoutY="130.0" promptText="Email">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font></TextField>
+      <Label fx:id="accountLabel" layoutX="19.0" layoutY="107.0" prefHeight="17.0" prefWidth="563.0">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="accountPassword" layoutX="231.0" layoutY="221.0" promptText="Password">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
